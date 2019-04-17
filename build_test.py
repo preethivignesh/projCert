@@ -8,7 +8,7 @@ options.binary='/usr/bin/chromium-browser'
 #driver_path='/home/edureka/bin/chromedriver'
 browser = webdriver.Chrome(chrome_options=options) #,executable_path=driver_path); commenting as will try to install desired chromedriver in default path and run the case
 time.sleep(120)
-browser.get("http://127.0.0.1:8080/");
+browser.get("http://ec2-18-206-244-231.compute-1.amazonaws.com:8000/");
 time.sleep(10)
 link = browser.find_element_by_link_text('About Us')
 link.click();
