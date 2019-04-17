@@ -5,7 +5,7 @@ import time
 options = Options();
 options.add_argument("--headless");
 options.binary='/usr/bin/chromium-browser'
-#driver_path='/home/edureka/bin/chromedriver'
+driver_path='/usr/bin/chromedriver'
 browser = webdriver.Chrome(chrome_options=options) #,executable_path=driver_path); commenting as will try to install desired chromedriver in default path and run the case
 time.sleep(120)
 browser.get("http://ec2-54-226-38-2.compute-1.amazonaws.com:8000/");
