@@ -1,4 +1,4 @@
-FROM preethisekar2005/webapp
+FROM devopsedu/webapp
 RUN rm -f /var/www/html/index.*
 COPY website /var/www/html/
 EXPOSE 80
